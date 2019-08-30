@@ -58,12 +58,15 @@ class Student:
         else:
             raise TypeError('Please provide a number for the cohort number')
 
+    def __str__(self):
+        return f"{self.full_name} is {self.age} years old and is in cohort {self.cohort_num}"
+
 pam = Student()
 pam.first_name = "Pam"
 pam.last_name = "Beasley"
 pam.age = 18
 pam.cohort_num = 33
 
-print(pam.full_name)
+print(pam)
 
 print()
